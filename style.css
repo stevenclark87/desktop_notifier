@@ -1,0 +1,380 @@
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #EE4C30;
+    margin: 0px 0px 25px 0px;
+}
+
+.btn {
+  background-color: #EE4C30;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 15px 2px;
+  width: 215px;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+/***********************************************************************
+ *  Header
+ **********************************************************************/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 6%;
+    align-items: center;
+}
+
+.logo{
+    width: 100%;
+}
+
+.logodiv {
+    width: 35%;
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.logodiv img {
+  max-width: 400px;
+}
+
+.header .btn {
+    margin-left: auto;
+}
+
+
+
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.cover_container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: #F3F5F7;
+    padding: 1% 0% 3% 0%;
+    justify-content: center;
+    align-items: center
+}
+
+.notification_container {
+  background-color: #EEF0F0;
+  border-radius: 15px;
+  max-width: 300px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #EE4C30;
+  z-index: 9;
+  position: relative;
+  top: 50px;
+  left: -20px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.cover_img{
+width: 50%;
+padding: 1% 0% 1% 8%;
+
+}
+
+.cover_img img{
+    max-width: 90%;
+    margin-left: auto;
+}
+
+.cover_text {
+    font-size: 18px;
+    color: #494949;
+    width: 50%;
+    padding-left: 3%;
+}
+
+.coverp {
+  margin-bottom: 25px;
+}
+
+/***********************************************************************
+ *  Sign up
+ **********************************************************************/
+.signup_container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 5% 0%;
+    justify-content: center;
+    align-items: top;
+}
+.pushfooter{
+  margin-bottom: -100px;
+}
+.subscribe_steps{
+    width: 50%;
+    padding: 0% 5% 0% 8%;
+}
+
+.subscribe_form {
+    font-size: 18px;
+    color: #494949;
+    width: 50%;
+    padding-left: 3%;
+}
+
+input{
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+}
+
+.check_boxes {
+    display: inline-block;
+}
+
+.check_box {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.form_label {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+
+#frame { 
+overflow: hidden;
+position: relative;
+width:900px;
+height:550px;
+-ms-zoom: 0.85;
+-moz-transform: scale(0.70);
+-moz-transform-origin: 0px 0;
+-o-transform: scale(0.70);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.70);
+-webkit-transform-origin: 0 0; 
+
+}
+
+.validEmail {
+  border: 2px solid green;
+}
+
+.invalidEmail {
+  border: 2px solid red;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+#invalidEmailContent {
+  display: inline-block;
+  color: red;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.hideItem {
+  display: none !important;
+}
+
+#websiteField {
+  display: none;
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    width: 100%;
+}
+.footer_position {
+  position: relative;
+  bottom: 0;
+  padding: 25px;
+  margin-bottom: 0px;
+}
+/***********************************************************************
+ *  Media Queries
+ **********************************************************************/
+@media only screen and (max-width: 1080px) {
+
+#frame { 
+overflow: hidden;
+position: relative;
+width:800px;
+height:700px;
+-ms-zoom: 0.60;
+-moz-transform: scale(0.60);
+-moz-transform-origin: 0px 0;
+-o-transform: scale(0.60);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.60);
+-webkit-transform-origin: 0 0; 
+
+}
+
+.pushfooter{
+  margin-bottom: -200px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+}
+
+@media only screen and (max-width: 920px) {
+
+
+#frame { 
+overflow: hidden;
+position: relative;
+width:900px;
+height:700px;
+-ms-zoom: 0.60;
+-moz-transform: scale(0.50);
+-moz-transform-origin: 0px 0;
+-o-transform: scale(0.50);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.50);
+-webkit-transform-origin: 0 0; 
+
+}
+
+.check_boxes {
+    display: block !important;
+    margin: 0;
+}
+
+.form_label .checkbox{
+    margin: 0;
+}
+
+
+}
+
+
+ @media only screen and (max-width: 800px) {
+    .container {
+    flex-flow: row wrap;
+}
+
+.cover_img{
+    padding-right: 0%;
+    margin-right: 5px;
+    width: 59%;
+    margin-top: 15px;
+}
+
+.cover_img img{
+    
+}
+
+.cover_text {
+    font-size: 18px;
+    color: #494949;
+    padding-right: 0%;
+}
+
+.header {
+    justify-content: center;
+ }
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+}
+
+@media only screen and (max-width: 760px) {
+
+.signup_container {
+    display: flex;
+    flex-wrap: wrap !important;
+    flex-direction: row wrap !important;
+}
+
+.pushfooter {
+  margin-bottom: -300px;
+}
+
+.cover_container {
+    display: flex;
+    flex-wrap: wrap !important;
+    flex-direction: row wrap !important;
+}
+
+.btn {
+  background-color: #EE4C30;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 15px 2px;
+  width: 180px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 0px;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+#frame { 
+overflow: hidden;
+position: relative;
+width:700px;
+height:700px;
+-ms-zoom: 0.45;
+-moz-transform: scale(0.45);
+-moz-transform-origin: 0px 0;
+-o-transform: scale(0.45);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.45);
+-webkit-transform-origin: 0 0; 
+
+}
+
+.pushfooter{
+    margin-bottom: -350px;
+}
+}

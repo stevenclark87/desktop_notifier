@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thryv Notify</title>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Open+Sans:400,600&display=swap" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="shortcut icon" href="img/thryv_favicon.ico">
+</head>
+<body>
+  <div class="header">
+      <div class="logodiv"><img class="logo" src="img/thryv_notify.png"></div>
+      <a id="header_notify_btn" href="#signup" class="btn">Get Notified</a>
+  </div>
+  <div id="cover_div" class="cover_container">
+    <div class="cover_text">
+      <div>
+      <h1>Your Business. Real time.</h1>
+      <h2>Clients, appointments and payments on your desktop</h2>
+      <div class="coverp">Having to periodically check back in Thryv to see if that customer finally made that payment or if you got a new appointment in can be frustrating. Help make multi-tasking easier while working in Thryv by a getting notifications about business activity in your browser.</div>
+    </div>
+      <a href="#signup" class="btn">Get Notified</a>
+    </div>
+    <div class="cover_img"><div class="notification_container"><img src="img/notification.png"></div><img class="cover" src="img/features-4-appointment-section-2.png"></div>
+  </div><a name="signup"></a>
+<div id="permission_div" style="display:none;">
+  <div class="signup_container">
+    <div class="subscribe_form">
+      <form id="thryv_email_check" onsubmit="return false">
+    <h2>Let's Get Started:</h2>
+    Thryv Account Email: <input id="thryvEmailField" type="text" name="thryv_email" ><div id="invalidEmailContent" class="hideItem">*Not valid email format</div><br /><br />
+    Thryv Account Integration Token: <input id="endUserToken" type="text" name="end_user_token" ><br /><br />
+    <input id="websiteField" type="text" name="website">
+    Choose your notifications<br /><br />
+    <div class="check_boxes">
+    <div class="check_box"><input id="notificationsClientsField" type="checkbox" name="notificationsClients"><div class="form_label">Clients</div></div>
+    <div class="check_box"><input id="notificationsAppointmentsField" type="checkbox" name="notificationsAppointments" ><div class="form_label">Appointments</div></div>
+    <div class="check_box"><input id="notificationsPaymentsField" type="checkbox" name="notificationsPayments" ><div class="form_label">Payments</div></div><br /><br /><br /></div>
+    <input class="btn" type="submit" value="Subscribe" onclick="return validatesubscribeForm()">
+</form>
+    </div>
+    <div class="subscribe_steps">
+      Need Help? Log into Thryv here and click on "Connect" in the Zapier tile. Copy the token to your clipboard and paste it into the token field. <br /><br />
+      <iframe id="frame" src="https://go.thryv.com/app/settings/integrations"></iframe>
+    </div>
+  </div>
+</div>
+   <div id="preferences_div" style="display:none;">
+    <div id="signupContainer" class="signup_container">
+      <div class="subscribe_form">
+    <form name="subscribeForm2" onsubmit="return false" >
+      <input id="thryvIdField2" type="hidden" name="thryv_id"><br /><br />
+      <input id="end_user_token2" type="hidden" name="end_user_token2">
+      <h2>Update Your Preferences</h2>
+      You are currently being notified on: <br />
+      <input id="notificationsClientsField2" type="checkbox" name="notificationsClients" >Clients<br />
+      <input id="notificationsAppointmentsField2" type="checkbox" name="notificationsAppointments" >Appointments<br />
+      <input id="notificationsPaymentsField2" type="checkbox" name="notificationsPayments" >Payments<br /><br />
+      <input type="submit" value="Update" onclick="return sendPreferencesForm()" class="btn">
+    </form>
+  </div>
+  <div class="subscribe_steps">
+    <div id="token_div" style="display: none;">
+    <h4>Instance ID Token</h4>
+    <p id="token" style="word-break: break-all;"></p>
+    <button class="btn"
+            onclick="deleteToken()">Delete Token</button>
+  </div>
+    <p id="token"></p>
+  </div>
+  </div>
+  </div>
+  <!-- div to display messages received by this app. -->
+  <div id="messages"></div>
+  <footer id="footerDiv">Copyright Steven Clark</footer>
+
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<script src="/__/firebase/6.1.1/firebase-app.js"></script>
+<script src="/__/firebase/6.1.1/firebase-messaging.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
